@@ -1,44 +1,23 @@
-/*eslint-disable*/
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-import logo from './logo.svg';
-import './App.css';
-import React, {useState} from 'react';
-import MyName from './myName';
+const Menu = () => {
+    const activeStyle = {
+        color: 'green',
+        fontSize: '2rem'
+    };
 
-function App() {
-  function plus(){
-    console.log(1);
-  }
+    return (
+        <div>
+            <ul>
+                <li><NavLink exact to="/" activeStyle={activeStyle}>Home</NavLink></li>
+                <li><NavLink exact to="/about" activeStyle={activeStyle}>About</NavLink></li>
+                <li><NavLink to="/about/foo" activeStyle={activeStyle}>About Foo</NavLink></li>
+                <li><NavLink to="/posts" activeStyle={activeStyle}>Posts</NavLink></li>
+            </ul>
+            <hr/>
+        </div>
+    );
+};
 
-  let [good, goodChange] = useState(0);
-  let foodValue = '고기'; // 변수를 html 안에 그대로 꽂아넣을 수 있다.
-  let [a,b] = useState('남자 코트 추천'); // useState는 재렌더링이 자동으로 된다.
-  function wordChange(){
-    b('여자 코트 추천');
-  }
-
-  return (
-    <div className="App">
-      <header>
-        firstReact
-      </header>
-      <div className="list">
-        <button onClick={ wordChange }>바꾸기</button>
-        { a } <span onClick={ ()=>{goodChange(good + 1)} }>👍</span> {good}
-        
-      </div>
-      <Modal></Modal>
-      <MyName name="정지원"/>
-    </div>
-  );
-}
-
-function Modal(){
-  return(
-    <div>
-      sjfdlksjfklsjfl
-    </div>
-  )
-}
-
-export default App;
+export default Menu;
