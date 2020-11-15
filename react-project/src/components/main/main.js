@@ -32,8 +32,17 @@ class Main extends Component{
         })
     }
     render(){
+        let shot = 0;
         const style = {
              transform: 'translateX(-' + 59.1 * i + 'vw)' 
+        }
+        const sizeStyle = {
+            width: '10000px',
+            height: '10000px'
+        }
+        function size(){
+            shot = 1;
+            console.log(shot)
         }
         return(
             <div className="MainBody">
@@ -53,8 +62,8 @@ class Main extends Component{
                 <div className="Body"
                 style={style}
                 >
-                    <Link>
-                    <main.ChoosePage ref={this.p1} id={
+                    <Link to="/speed" >
+                    <main.ChoosePage onClick={size} ref={this.p1} id={
                         (i==0)?"p1":"p"
                     } style={{backgroundColor:"rgb(240, 195, 49)"}}>
                         <a href="">: Regulation of speed </a>
