@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import *  as C from './colorStyle'
-import './color.css'
+import *  as C from './rotateStyle'
+import './rotate.css'
 import joker from './스페이드 .png'
 import spade from './스페이드A .png'
 
