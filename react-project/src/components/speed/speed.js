@@ -34,7 +34,7 @@ class Speed extends Component{
             transform: 'translate(360deg)'
         }
         const speedStyle = {
-            animationDuration: 20000/(i*3) +'s'
+            animationDuration: 20000/(i*2) +'s'
         }
         return(
             <div>

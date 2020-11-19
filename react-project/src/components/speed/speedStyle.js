@@ -67,7 +67,9 @@ i{
     color:white;
     font-size:1.8rem;
     :hover{
+        transition:1s;
         opacity:0.7;
+        margin-left:20px;
     }
 }
 `
