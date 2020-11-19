@@ -8,14 +8,15 @@ function Header() {
           <a><i class="far fa-paper-plane"></i><b>W</b>eWhy</a>
           <div>
               <ul>
-                  <li><i>A</i>bout</li>
+                   <li><i>A</i>bout</li>
                   <li><i>I</i>ntroduce</li>
-                  <li><i>S</i>ource</li>
+                  <li><a href="https://github.com/jidole02/study-react/tree/master/react-project/src"><i>S</i>ource</a></li>
               </ul>
           </div>
           <div>
-          <i class="fab fa-github"></i>
-          <i class="fab fa-facebook"></i>
+          <a href="https://github.com/jidole02"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100012148756964"><i class="fab fa-facebook"></i></a>
+          
           </div>
       </header.HeaderDiv>
   );

@@ -42,9 +42,22 @@ div{
         li:nth-of-type(1){
             margin-left:0;
         }
+        a{
+            font-size:19px;
+            i{
+                font-size:19px;
+            }
+            :hover{
+                opacity:0.7;  
+                cursor: pointer;
+            }
+        }
     }
 }
 div{
+    a{
+        margin-left:10px;
+    }
     i{
         font-size:1.7rem;
         margin-top:15px;    
