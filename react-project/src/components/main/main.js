@@ -36,10 +36,6 @@ class Main extends Component{
         const style = {
              transform: 'translateX(-' + 59.1 * i + 'vw)' 
         }
-        const sizeStyle = {
-            width: '10000px',
-            height: '10000px'
-        }
         function size(){
             shot = 1;
             console.log(shot)
@@ -63,7 +59,8 @@ class Main extends Component{
                 style={style}
                 >
                     <Link to="/speed" >
-                    <main.ChoosePage onClick={size} ref={this.p1} id={
+                    <main.ChoosePage onClick={size
+                    } ref={this.p1} id={
                         (i==0)?"p1":"p"
                     } style={{backgroundColor:"rgb(240, 195, 49)"}}>
                         <a href="">: Regulation of speed </a>
@@ -73,7 +70,7 @@ class Main extends Component{
                         </h1> <h5>Made Jiwon</h5>   
                     </main.ChoosePage>
                     </Link>
-                    <Link>
+                    <Link to="/mouse">
                     <main.ChoosePage id={
                         (i==1)?"p1":"p"
                     }style={{backgroundColor:"rgb(241, 83, 255)"}}>
@@ -84,10 +81,10 @@ class Main extends Component{
                         </h1> <h5>Made Jiwon</h5>   
                     </main.ChoosePage>
                     </Link>
-                    <Link>
+                    <Link to="/rotate">
                     <main.ChoosePage id={
                         (i==2)?"p1":"p"
-                    }style={{backgroundColor:"rgb(100, 255, 190)"}}>
+                    }style={{backgroundColor:"coral"}}>
                          <a href="">: Turning effect </a>
                         <h4>Interective Web Project</h4>
                         <h1>Rotate <br/>
@@ -95,13 +92,13 @@ class Main extends Component{
                         </h1> <h5>Made Jiwon</h5>   
                     </main.ChoosePage>
                     </Link>
-                    <Link>
+                    <Link to="/sprite">
                     <main.ChoosePage id={
                         (i==3)?"p1":"p"
                     }style={{backgroundColor:"rgb(255, 60, 86)"}}>
                         <a href="">: Interective Web </a>
                         <h4>Interective Web Project</h4>
-                        <h1>Speed <br/>
+                        <h1>Color <br/>
                         Demonstrate
                         </h1> <h5>Made Jiwon</h5>   
                     </main.ChoosePage>
